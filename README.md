@@ -13,7 +13,7 @@ Para instalar basta copiar os arquivos na pasta de configuração do sistema lin
 ```
 # cp rc.xml ~/.config/openbox/rc.xml
 ```
-O arquivo rc.xml edita as configurações gerais das funcionalidades do openbox e é um dos arquivos mais relevantes para o ambiente de desenvolvimento.
+O arquivo rc.xml edita as configurações gerais das funcionalidades do openbox e é um dos arquivos mais relevantes para o openbox.
 
 ## Arquivo autostart
 
