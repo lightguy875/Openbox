@@ -1,19 +1,19 @@
 # Objetivo
 
-Apresentar arquivos de configuração do openbox já com algumas alterações pessoais para o gerenciador de janelas ou WM
+Apresentar arquivos de configuração do openbox já com algumas alterações pessoais para o gerenciador de janelas ou WM.
 
 ## Como instalar
 
-Para instalar basta copiar os arquivos na pasta de configuração do sistema linux que geralmente está localizado na pasta de usuário de acordo com o seguinte comando
+Para instalar basta copiar os arquivos na pasta de configuração do sistema linux que geralmente está localizado na pasta de usuário de acordo com o seguinte comando:
 
 ```
 # mv rc.xml ~/.config/openbox/rc.xml
 ```
-É indicado criar um arquivo de backup da configuração atual e caso queira apenas copiar o arquivo de configuração faça
+É indicado criar um arquivo de backup da configuração atual e caso queira apenas copiar o arquivo de configuração faça:
 ```
 # cp rc.xml ~/.config/openbox/rc.xml
 ```
-O arquivo rc.xml edita as configurações gerais das funcionalidades do openbox e é um dos arquivos mais relevantes para o ambiente de desenvolvimento
+O arquivo rc.xml edita as configurações gerais das funcionalidades do openbox e é um dos arquivos mais relevantes para o ambiente de desenvolvimento.
 
 ## Arquivo autostart
 
@@ -21,7 +21,7 @@ O arquivo autostart é de configuração pessoal não será indicado para todos 
 
 ## Instalação do autostart
 
-Para instalar o autostart, é necessário apenas utilizar os mesmos comandos de instalação usados para o arquivo rc.xml 
+Para instalar o autostart, é necessário apenas utilizar os mesmos comandos de instalação usados para o arquivo rc.xml: 
 ```
 # mv autostart ~/.config/openbox/autostart
 ```
@@ -29,5 +29,5 @@ Ou
 ```
 # cp autostart ~/.config/openbox/autostart
 ```
-O primeiro caso mover o arquivo para o ambiente de instalação e o segundo caso queira colocar uma cópia para o ambiente
+O primeiro caso mover o arquivo para o ambiente de instalação e o segundo caso queira colocar uma cópia para o ambiente.
 
