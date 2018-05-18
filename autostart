@@ -11,7 +11,7 @@ gnome-sound-applet &
 # setar teclado
 setxkbmap -layout br -variant abnt2 &
 #configuracao para teclar com touchpap
-xinput set-prop 11 277 1 &
+xinput set-prop "DLL0641:00 06CB:7621 Touchpad" "libinput Tapping Enabled" 1 &
 #configuracao para iniciar o controle de volume
 volumeicon &
 #configuração de wallpaper
