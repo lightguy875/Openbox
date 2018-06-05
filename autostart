@@ -1,6 +1,8 @@
 #Execução do compositor
 compton --config .config/compton/compton.conf -b &
-#iniciar network manager
+#iniciar blueman-applet
+blueman-applet &
+#iniciar network manager-applet
 nm-applet &
 #painel1
 cairo-dock -o  &
