@@ -1,13 +1,16 @@
 #Execução do compositor
 compton --config .config/compton/compton.conf -b &
+#xcompmgr &
 #iniciar blueman-applet
-blueman-applet &
+#blueman-applet &
 #iniciar network manager-applet
 nm-applet &
 #painel1
 cairo-dock -o  &
 #painel2
 #tint2 &
+#painel3
+#docky &
 #controle de som do gnome
 gnome-sound-applet &
 # setar teclado
@@ -18,6 +21,7 @@ xinput set-prop "DLL0641:00 06CB:7621 Touchpad" "libinput Tapping Enabled" 1 &
 volumeicon &
 #configuração de wallpaper
 nitrogen --restore &
+#feh --bg-scale /home/luis/Imagens/wallpaper\ 4k/imagens/03984_alpengluhenii_1920x1080.jpg 
 #screen-saver
 #gnome-screensaver
 #gnome-polkit
