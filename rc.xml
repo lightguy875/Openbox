@@ -176,7 +176,16 @@
   </dock>
   <keyboard>
     <chainQuitKey>C-g</chainQuitKey>
+    <!--Aplication menu-->
+     <keybind key="C-A-space">
+   <action name="ShowMenu"><menu>root-menu</menu></action>
+    </keybind>
     <!--Applications keyboard Shortcuts-->
+   	 <keybind key="C-S-w">
+   		 <action name="Execute">
+   			 <command>waterfox</command>
+   		 </action>
+    	</keybind>
     <keybind key="C-S-r">
       <action name="Execute">
         <command>rhythmbox</command>
@@ -241,9 +250,14 @@
         <command>mate-screenshot -a</command>
       </action>
     </keybind>
+    <keybind key="A-Print">
+     <action name="Execute">
+     <command>mate-screenshot -w</command>
+     </action>
+    </keybind>
     <keybind key="W-l">
       <action name="Execute">
-        <command>/usr/bin/light-locker-command -l</command>
+        <command>light-locker-command -l</command>
       </action>
     </keybind>
     <keybind key="XF86MonBrightnessUp">
@@ -258,17 +272,17 @@
     </keybind>
     <keybind key="XF86AudioRaiseVolume">
       <action name="Execute">
-        <command>amixer set Master 5%+</command>
+        <command>amixer -q sset Master 5%+</command>
       </action>
     </keybind>
     <keybind key="XF86AudioLowerVolume">
       <action name="Execute">
-        <command>amixer set Master 5%-</command>
+        <command>amixer -q sset Master 5%-</command>
       </action>
     </keybind>
     <keybind key="XF86AudioMute">
       <action name="Execute">
-        <command>amixer set Master toggle</command>
+        <command>amixer -q  set Master toggle</command>
       </action>
     </keybind>
     <keybind key="C-A-Left">
