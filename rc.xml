@@ -177,15 +177,17 @@
   <keyboard>
     <chainQuitKey>C-g</chainQuitKey>
     <!--Aplication menu-->
-     <keybind key="C-A-space">
-   <action name="ShowMenu"><menu>root-menu</menu></action>
+    <keybind key="C-A-space">
+      <action name="ShowMenu">
+        <menu>root-menu</menu>
+      </action>
     </keybind>
     <!--Applications keyboard Shortcuts-->
-   	 <keybind key="C-S-w">
-   		 <action name="Execute">
-   			 <command>waterfox</command>
-   		 </action>
-    	</keybind>
+    <keybind key="C-S-w">
+      <action name="Execute">
+        <command>waterfox</command>
+      </action>
+    </keybind>
     <keybind key="C-S-r">
       <action name="Execute">
         <command>rhythmbox</command>
@@ -210,10 +212,10 @@
       </action>
     </keybind>
     <keybind key="W-Left"><action name="UnmaximizeFull"/><action name="MaximizeVert"/><action name="MoveResizeTo"><width>50%</width><x>0</x><y>0</y></action>
-   # <action name="MoveToEdge"><direction>west</direction></action>
+   # <action name="MoveToEdge"><direction>west</direction></action> 
 </keybind>
     <keybind key="W-Right"><action name="UnmaximizeFull"/><action name="MaximizeVert"/><action name="MoveResizeTo"><width>50%</width><x>-0</x><y>0</y></action>
-    #<action name="MoveToEdge"><direction>east</direction></action>
+    # <action name="MoveToEdge"><direction>east</direction></action>
 </keybind>
     <!--Desktops management-->
     <keybind key="W-Insert">
@@ -251,9 +253,9 @@
       </action>
     </keybind>
     <keybind key="A-Print">
-     <action name="Execute">
-     <command>mate-screenshot -w</command>
-     </action>
+      <action name="Execute">
+        <command>mate-screenshot -w</command>
+      </action>
     </keybind>
     <keybind key="W-l">
       <action name="Execute">
@@ -272,18 +274,43 @@
     </keybind>
     <keybind key="XF86AudioRaiseVolume">
       <action name="Execute">
-        <command>amixer -q sset Master 5%+</command>
+        <command>pamixer -i 5</command>
       </action>
     </keybind>
     <keybind key="XF86AudioLowerVolume">
       <action name="Execute">
-        <command>amixer -q sset Master 5%-</command>
+        <command>pamixer -d 5</command>
       </action>
     </keybind>
     <keybind key="XF86AudioMute">
       <action name="Execute">
-        <command>amixer -q  set Master toggle</command>
+        <command>pamixer -t</command>
       </action>
+    </keybind>
+    <keybind key="XF86AudioStop">
+       <action name="Execute">
+           <command>playerctl stop</command>
+       </action>
+    </keybind>
+    <keybind key="XF86AudioPlay">
+	<action name="Execute">
+	    <command>playerctl play-pause</command>
+	</action>
+    </keybind>
+    <keybind key="XF86AudioPrev">
+	<action name="Execute">
+	   <command>playerctl previous</command>
+	</action>
+    </keybind>
+    <keybind key="XF86AudioNext">
+	<action name="Execute">
+	    <command>playerctl next</command>
+	</action>
+    </keybind>
+    <keybind key="XF86AudioPrev">
+	<action name="Execute">
+	     <command>playerctl previous</command>
+	</action>
     </keybind>
     <keybind key="C-A-Left">
       <action name="DesktopLeft"/>
