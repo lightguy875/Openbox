@@ -274,43 +274,43 @@
     </keybind>
     <keybind key="XF86AudioRaiseVolume">
       <action name="Execute">
-        <command>pamixer -i 5</command>
+        <command>volume.sh volup</command>
       </action>
     </keybind>
     <keybind key="XF86AudioLowerVolume">
       <action name="Execute">
-        <command>pamixer -d 5</command>
+        <command>volume.sh voldown</command>
       </action>
     </keybind>
     <keybind key="XF86AudioMute">
       <action name="Execute">
-        <command>pamixer -t</command>
+        <command>volume.sh toggle</command>
       </action>
     </keybind>
     <keybind key="XF86AudioStop">
-       <action name="Execute">
-           <command>playerctl stop</command>
-       </action>
+      <action name="Execute">
+        <command>playerctl stop</command>
+      </action>
     </keybind>
     <keybind key="XF86AudioPlay">
-	<action name="Execute">
-	    <command>playerctl play-pause</command>
-	</action>
+      <action name="Execute">
+        <command>playerctl play-pause</command>
+      </action>
     </keybind>
     <keybind key="XF86AudioPrev">
-	<action name="Execute">
-	   <command>playerctl previous</command>
-	</action>
+      <action name="Execute">
+        <command>playerctl previous</command>
+      </action>
     </keybind>
     <keybind key="XF86AudioNext">
-	<action name="Execute">
-	    <command>playerctl next</command>
-	</action>
+      <action name="Execute">
+        <command>playerctl next</command>
+      </action>
     </keybind>
     <keybind key="XF86AudioPrev">
-	<action name="Execute">
-	     <command>playerctl previous</command>
-	</action>
+      <action name="Execute">
+        <command>playerctl previous</command>
+      </action>
     </keybind>
     <keybind key="C-A-Left">
       <action name="DesktopLeft"/>
