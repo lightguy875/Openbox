@@ -28,7 +28,9 @@ STATUS_NEW=`pamixer --get-volume`
 MUTED=`pamixer --get-mute`
 
 ## icon based on volume level
-if [ "$STATUS_NEW" -le 33 ]; then
+if [ "$STATUS_NEW" = "0" ]; then
+	ICON="notification-audio-volume-off"
+elif [ "$STATUS_NEW" -le 33 ]; then
 	ICON="notification-audio-volume-low"
 elif [ "$STATUS_NEW" -ge 66 ]; then
 	ICON="notification-audio-volume-high"
