@@ -18,8 +18,9 @@ fi
 ##play /usr/share/sounds/freedesktop/stereo/bell.oga -q
 
 ## killing existing notifications
-##(pidof xfce4-notifyd 1>/dev/null && killall xfce4-notifyd)
-pkill notify
+#(pidof mate-notification-daemon 1>/dev/null && killall mate-notification-daemon)
+#mate-notification-daemon
+#using lxqt-notificationd killing process is not needed 
 ## new sound level after change
 STATUS_NEW=`pamixer --get-volume`
 
@@ -40,4 +41,4 @@ if [ "$MUTED" = "true" ]; then
 fi
 
 ## sending notification
-notify-send " " -i $ICON -t 500 -h int:value:$STATUS_NEW -h string:synchronous:volume
+notify-send " " -i $ICON -t 5000 -h int:value:$STATUS_NEW -h string:synchronous:volume
