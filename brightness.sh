@@ -19,4 +19,4 @@ ICON="notification-display-brightness-full"
 ##Definind new xblacklight level
 status_new=`xbacklight -get`
 ##sending notification
-notify-send " " -i $ICON -t 5000 -h int:value:$status_new -h string:synchronouse:brightness
+notify-send " " -i $ICON -t 5000 -h int:value:$status_new -h string:synchronous:brightness
