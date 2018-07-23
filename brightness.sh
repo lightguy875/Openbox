@@ -2,21 +2,31 @@
 ##brightness level
 
 ##changing black light level
-status=`xbacklight -get`
+status=`light`
 if [ "$1" = "up" ]; then
-	xbacklight -inc 5
+	light -A 2.5
 elif [ "$1" = "down" ]; then
-	xbacklight -dec 5
+	light -U 2.5
 fi
 
 ##killing notification
-(pidof notify-osd 1>/dev/null && killall notify-osd)
+#(pidof notify-osd 1>/dev/null && killall notify-osd)
 
 ##No sound to play
 
-##Defining Icon to send
-ICON="notification-display-brightness-full"
 ##Definind new xblacklight level
-status_new=`xbacklight -get`
+status_new=`light`
+
+##Defining Icon to send
+if [ "$status_new==0.0" ]; then
+	ICON="notification-display-brightness-zero"
+elif [ "$status_new<33.0" ]; then
+	ICON="notification-display-brightness-low"
+elif [ "$status_new>66.0" ]; then
+	ICON="notification-display-brightness-high"
+elif [ "$status_new>33.0" ] && [ "$status_new<66.0" ]; then
+	ICON="notification-display-brightness-medium"
+fi
+
 ##sending notification
 notify-send " " -i $ICON -t 5000 -h int:value:$status_new -h string:synchronous:brightness
