@@ -40,7 +40,7 @@
                   'Active' - where the active window is -->
   </placement>
   <theme>
-    <name>1977-Black</name>
+    <name>Turquoise Nights Ob</name>
     <titleLayout>NLIMC</titleLayout>
     <!--
       available characters are NDSLIMC, each can occur at most once.
@@ -198,6 +198,11 @@
         <command>google-chrome-stable</command>
       </action>
     </keybind>
+    <keybind key="W-x">
+      <action name="Execute">
+        <command>xkill</command>
+      </action>
+    </keybind>
     <!--Windows management-->
     <keybind key="W-Up">
       <action name="Maximize"/>
@@ -264,12 +269,12 @@
     </keybind>
     <keybind key="XF86MonBrightnessUp">
       <action name="Execute">
-        <command>xbacklight +5</command>
+        <command>brightness.sh up</command>
       </action>
     </keybind>
     <keybind key="XF86MonBrightnessDown">
       <action name="Execute">
-        <command>xbacklight -5</command>
+        <command>brightness.sh down</command>
       </action>
     </keybind>
     <keybind key="XF86AudioRaiseVolume">
