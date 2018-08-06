@@ -17,7 +17,7 @@ O arquivo rc.xml edita as configurações gerais das funcionalidades do openbox 
 
 ## Arquivo autostart
 
-O arquivo autostart é de configuração pessoal não será indicado para todos os sitemas com openbox, apenas em alguns. No meu caso, faço uso do cairo-dock, comptonmate-screenshot , redshift , network manager applet(nm-applet), polkit-gnome-authentication-agent-1 e volumeicon. Portanto, é necessário ter esses programas para que a aplicação funcione.
+O arquivo autostart é de configuração pessoal não será indicado para todos os sitemas com openbox, apenas em alguns. No meu caso, faço uso do cairo-dock, compton , mate-screenshot , redshift , network manager applet(nm-applet), polkit-gnome-authentication-agent-1 e volumeicon. Portanto, é necessário ter esses programas para que a aplicação funcione.
 
 ## Instalação do autostart
 
