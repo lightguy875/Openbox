@@ -6,7 +6,7 @@ compton --config .config/compton/compton.conf -b &
 #iniciar network manager-applet
 nm-applet &
 #painel1
-cairo-dock -o  &
+cairo-dock -c  &
 #painel2
 #tint2 &
 #painel3
