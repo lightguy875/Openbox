@@ -2,6 +2,10 @@
 
 Apresentar arquivos de configuração do openbox já com algumas alterações pessoais para o gerenciador de janelas ou WM.
 
+## Arquivo rc.xml
+Esse arquivo contém toda a configuração de atalhos do openbox, como funcionalidades do touchpad,clique de mouse, atalhos do teclado para programas e iteração com o ambiente de trabalho. Sem esse arquivo não é possível haver interação do usuáriopenbox.
+É necessário instalar os seguintes programas para que rc.xml funcione corretamente light,pamixer,xrandr,ranr
+
 ## Como instalar
 
 Para instalar basta copiar os arquivos na pasta de configuração do sistema linux que geralmente está localizado na pasta de usuário de acordo com o seguinte comando:
