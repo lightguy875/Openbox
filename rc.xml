@@ -339,11 +339,6 @@
 				<command>playerctl next</command>
 			</action>
 		</keybind>
-		<keybind key="XF86AudioPrev">
-			<action name="Execute">
-				<command>playerctl previous</command>
-			</action>
-		</keybind>
 		<keybind key="C-A-Left">
 			<action name="DesktopLeft"/>
 		</keybind>
