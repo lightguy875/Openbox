@@ -249,6 +249,12 @@
 				<command>xrandr --orientation inverted</command>
 			</action>
 		</keybind>
+		<!--Openbox internal commands-->
+		<keybind key="W-o">
+			<action name="Execute">
+				<command>openbox --reconfigure</command>
+			</action>
+		</keybind>
 		<!--Desktops management-->
 		<keybind key="W-Insert">
 			<action name="AddDesktop">
