@@ -27,7 +27,7 @@ nitrogen --restore &
 #gnome-polkit
 /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 #Coloração da tela de acordo com o dia
-redshift &
+redshift -l geoclue2  &
 #Increase system volume on startup
 alsactl init &
 
